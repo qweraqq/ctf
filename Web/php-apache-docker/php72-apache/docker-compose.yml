@@ -1,0 +1,8 @@
+version: '2'
+services:
+  php72-apache:
+    build: .
+    ports:
+      - "6072:80"
+    volumes:
+      - ./src:/var/www/html

@@ -1,0 +1,8 @@
+version: '2'
+services:
+  php56-apache:
+    build: .
+    ports:
+      - "6056:80"
+    volumes:
+      - ./src:/var/www/html
